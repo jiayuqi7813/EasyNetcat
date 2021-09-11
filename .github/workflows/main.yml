@@ -16,6 +16,7 @@ jobs:
           flag: "${{ secrets.FLAG }}"
         run: |
           echo "$user:$issues" >> issues
+          echo "$flag"
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
