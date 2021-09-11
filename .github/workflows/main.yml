@@ -1,10 +1,8 @@
 name: CheckIn
 on:
   issues:
-    types: test
-  workflow_dispatch:  ${{ secret.FLAG }}
-                      ${{ env.FLAG }}
-                      ${{ secret.flag }}
+    types: [open]
+  workflow_dispatch: 
 
 jobs:
   build:
